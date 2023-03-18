@@ -582,18 +582,18 @@
     </div>
   </div>
   <div class="right-contact">
-      <form onsubmit="sendEmail(); reset(); return false;"  class="contact-form">
+      <form  name="contact" method="POST" data-netlify="true" class="contact-form">
         <div class="input-control i-c-2">
-            <input type="text" id="name" required placeholder="YOUR NAME">
-            <input type="email" id="email" required placeholder="YOUR EMAIL">
+            <input type="text" id="name" name="name" required placeholder="YOUR NAME">
+            <input type="email" id="email" name="email" required placeholder="YOUR EMAIL">
         </div>
         <div class="input-control">
           <input type="text" id="subject" required placeholder="ENTRER SUBJECT">
         </div>
         <div class="input-control">
-            <textarea name="" id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
+            <textarea name="message" id="message"  cols="15" rows="8" placeholder="Message Here..."></textarea>
         </div>
-        <button class="right-contact-submitbtn">Submit</button>
+        <button class="right-contact-submitbtn" type="submit" >Submit</button>
         <div class="submit-btn">
           <a href="cv-Suzie.pdf" class="main-btn" target="_blank">
             <span class="btn-text"> Download CV </span>
@@ -603,13 +603,7 @@
 
       </form>
 
-
-      
-      
-
-
     </div>
-   
 
     </div>
   </div>
